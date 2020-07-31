@@ -1,0 +1,14 @@
+
+<form action="/{{user._id}}/edit" method="POST">
+  <label for="input-username">Username</label>
+  <input type="text" id="input-username" name="username" placeholder="Your Username" value="{{user.username}}"/>
+
+<label for="select-role">Role</label>
+  <select id="select-role" name="role"}>
+    <option value="student"> Student</option>
+    <option value="assistant">Assistant</option>
+    <option value="teacher">Teacher</option>
+  </select>
+
+  <button>Edit details</button>
+</form>

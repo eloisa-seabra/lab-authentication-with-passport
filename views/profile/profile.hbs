@@ -1,0 +1,12 @@
+<h1>Profile page</h1>
+
+{{#if user}}
+  <div>
+    <h3> username: <span>{{user.username}}</span></h3>
+    <h3> role: <span>{{user.role}}</span></h3>
+    <a href="/{{user._id}}/edit">Edit Profile</a>
+
+  </div>
+{{/if}}
+
+<a href="/{{user.role}}-dashboard">{{user.role}} Dashboard</a>
